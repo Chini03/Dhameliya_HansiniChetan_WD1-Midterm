@@ -1,8 +1,87 @@
-@import "tailwindcss";
+.mediumGray{color: #A19596;}
+.LightNeutral{color: #F1F1F1;}
+.darkGray{color: #453B3C;}
+.lightGray{color: #DDD6D7;}
 
-@theme {
-    --color--mediumGray: #A19596;
-    --color--white: #F1F1F1;
-    --color--darkGray: #453B3C;
-    --color--lightGray: #DDD6D7;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #453B3C;
+    background-color: #F1F1F1;
 }
+
+header{
+    background-color: #A19596;
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
+    height: 176px;
+}
+
+header .svg-container {
+    width: 52px;
+    height: 52px;
+}
+
+
+header .svg-container object svg {
+    color: #F1F1F1;
+}
+
+#logoHeader-placeholder,#logoFooter-placeholder {
+    font-size: 18px;
+    padding: 22px 70px;
+    background-color: #DDD6D7;
+    height: 64px;
+    width: 180px;
+    color: #453B3C;
+}
+
+#header-viewShop {
+    font-size: 14px;
+    padding: 16px 24px;
+    background-color: #DDD6D7;
+    height: 48px;
+    width: 120px;
+    border-radius: 4px;
+    margin-left: 60px;
+}
+
+#header-icon-conLeft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-icon-conRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+footer {
+    background-color: #A19596;
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
+    height: 324px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+footer nav ul li:nth-child(2){
+    margin: 40px 0px;
+}
+
+#copyright, #privacyPolicy{
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+}
+
