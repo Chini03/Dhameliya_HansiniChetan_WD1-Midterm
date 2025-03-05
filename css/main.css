@@ -161,3 +161,8 @@ footer nav ul li:nth-child(2){
     justify-content: center
 }
 
+#contact-section h2{
+    font-size: 21px;
+    text-align: center;
+}
+
