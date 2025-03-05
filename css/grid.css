@@ -61,11 +61,11 @@
     justify-content: center;
  }
 
- header .grid-con, footer .grid-con {
+ header .grid-con, footer .grid-con, #heroImage-placeholder {
     grid-column: 2/3; 
     /* puts grid-con into the 2nd column of full-width-grid-con */
     /* grid-row: 1/1; */
-    margin: 0;
+    margin: 0px auto;
  }
   
   .grid-con {

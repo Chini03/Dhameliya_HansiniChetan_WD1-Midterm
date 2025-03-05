@@ -4,11 +4,13 @@
 .lightGray{color: #DDD6D7;}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
     color: #453B3C;
     background-color: #F1F1F1;
+    margin: 0 auto;
 }
+
+/* header */
 
 header{
     background-color: #A19596;
@@ -55,6 +57,7 @@ header .svg-container object svg {
     justify-content: flex-end;
 }
 
+/* footer */
 
 footer {
     background-color: #A19596;
@@ -83,5 +86,78 @@ footer nav ul li:nth-child(2){
     display: flex;
     justify-content: center;
     color: #F1F1F1;
+}
+
+/* Hero Section */
+
+#heroImage-placeholder {
+    display: flex;
+    background-color: #453B3C;
+    /* width: 412px; */
+    height: 360px;
+    color: #F1F1F1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* product section */
+
+
+#product-section article {
+    background-color: #DDD6D7;
+    height: 415px;
+    width: 380px;
+    margin: 48px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.descripton {
+    display: flex;
+    justify-content: center;
+}
+
+#product_1-placeholder, #product_2-placeholder {
+    background-color: #453B3C;
+    height: 240px;
+    width: 348px;
+    color:#F1F1F1;
+    margin: 29px auto 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-section article h3{
+    font-size: 18px;
+    margin: 0px auto 10px auto;
+}
+
+#product-section article p{
+    font-size: 13px;
+    font-family: "Parkinsans", "Aleo", Arial, Helvetica, sans-serif;
+}
+
+.descripton div {
+    margin: 0px 16px;
+}
+
+.prodSec-shopButton {
+    font-size: 14px;
+    padding: 24px 23px;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+}
+
+#vid-placeholder {
+    margin: 48px auto;
+    height: 240px;
+    width: 380px;
+    background-color: #453B3C;
+    color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
