@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1.0, width=device-width">
-<title>Home</title>
+<title>Shop</title>
 <link href="css/grid.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,66 +11,80 @@
 
 <body>
 
-    <header>
-        <div>
-            <div class="svg-container">
-                <object data="images/icon-person-male.svg" type="image/svg+xml"></object>
+    <header class="full-width-grid-con">
+        <div class="grid-con">
+            <div class="col-start-1 col-span-2" id="header-icon-conLeft">
+                <div class="svg-container">
+                    <object data="images/icon-person-male.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="svg-container">
+                    <object data="images/icon-cart.svg" type="image/svg+xml"></object>
+                </div>
             </div>
-            <div class="svg-container">
-                <object data="images/icon-cart.svg" type="image/svg+xml"></object>
+            <div class="col-start-3 col-span-2" id="header-icon-conRight">
+                <div class="svg-container">
+                    <object data="images/icon-search.svg" type="image/svg+xml"></object>
+                </div>
+                <div class="svg-container">
+                    <object data="images/icon-menu.svg" type="image/svg+xml"></object>
+                </div>
             </div>
-            <div class="svg-container">
-                <object data="images/icon-search.svg" type="image/svg+xml"></object>
-            </div>
-            <div class="svg-container">
-                <object data="images/icon-menu.svg" type="image/svg+xml"></object>
-            </div>
-        </div>
-        <div>
+
             <!-- 
             <div class="svg-container">
                 <object data="images/logo.svg" type="image/svg+xml"></object>
             </div>
             -->
-            <div id="logoHeader-placeholder"><p>logo</p></div>
-            <div id="header-viewShop">View Shop</div>
+            <div id="logoHeader-placeholder" class="col-start-1"><p>logo</p></div>
+            <div id="header-viewShop" class="col-start-3">View Shop</div>
         </div>
     </header>
 
     <main>
-        <h1 class="hidden">Welcome to the Dr. Nut shop!</h1>
+        <h1 class="hidden">Welcome to Dr. Nut Shop</h1>
         <section id="product-section">
-            <h2 class="hidden">Check out our Products!</h2>
-            <nav id="product-list">
+            <nav>
                 <ul>
-                    <li><a href="#">Individuals</a></li>
+                    <li><a href="#">Products</a></li>
                     <li><a href="#">Bundles</a></li>
                     <li><a href="#">Accessories</a></li>
                 </ul>
             </nav>
+            <h2 class="hidden">Check out our Products!</h2>
             <article>
                 <!-- <img src="images/product_1.jpg" alt="Product Image"> -->
                 <div id="product_1-placeholder">Product Image</div>
-                <h3>Product Name</h3>
-                <p>Product Description - Lorem ipsum</p>
+                <div class="descripton">
+                    <div>
+                        <h3>Product Name</h3>
+                        <p>Product Description - Lorem ipsum</p>
+                    </div>
+                    <div class="col-start-3 prodSec-shopButton">Shop<br>Now</div>
+                </div>
             </article>
             <article>
-                <!-- <img src="images/product_2.jpg" alt="Product Image"> -->
+                <!-- <img src="images/product_1.jpg" alt="Product Image"> -->
                 <div id="product_2-placeholder">Product Image</div>
-                <h3>Product Name</h3>
-                <p>Product Description - Lorem ipsum</p>
+                <div class="descripton">
+                    <div>
+                        <h3>Product Name</h3>
+                        <p>Product Description - Lorem ipsum</p>
+                    </div>
+                    <div class="col-start-3 prodSec-shopButton">Shop<br>Now</div>
+                </div>
             </article>
         </section>
     </main>
 
-    <footer>
-                    <!-- 
+    <footer class="full-width-grid-con">
+        <div class="grid-con">
+            <!-- 
             <div class="svg-container">
                 <object data="images/logo.svg" type="image/svg+xml"></object>
             </div>
             -->
-            <div id="logoFooter-placeholder"><p>logo</p></div>
-            <nav>
+            <div class="col-start-1 col-span-2" id="logoFooter-placeholder"><p>logo</p></div>
+            <nav class="col-start-3 col-span-2">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -83,8 +97,9 @@
                     </li>
                 </ul>
             </nav>
-            <a href="#">Privacy Policy</a>
-            <p> &copy;copyright Dr. Nut</p>
+            <a id="privacyPolicy" class="col-start-2 col-span-2" href="#">Privacy Policy</a>
+            <p id="copyright" class="col-start-2 col-span-2" > &copy;copyright Dr. Nut</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
