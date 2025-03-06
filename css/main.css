@@ -1,8 +1,221 @@
-@import "tailwindcss";
+.mediumGray{color: #A19596;}
+.LightNeutral{color: #F1F1F1;}
+.darkGray{color: #453B3C;}
+.lightGray{color: #DDD6D7;}
 
-@theme {
-    --color--mediumGray: #A19596;
-    --color--white: #F1F1F1;
-    --color--darkGray: #453B3C;
-    --color--lightGray: #DDD6D7;
+body{
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
+    color: #453B3C;
+    background-color: #F1F1F1;
+    margin: 0 auto;
+}
+
+/* header */
+
+header{
+    background-color: #A19596;
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
+    height: 176px;
+}
+
+header .svg-container {
+    width: 52px;
+    height: 52px;
+}
+
+
+header .svg-container object svg {
+    color: #F1F1F1;
+}
+
+#logoHeader-placeholder,#logoFooter-placeholder {
+    font-size: 18px;
+    padding: 22px 70px;
+    background-color: #DDD6D7;
+    height: 64px;
+    width: 180px;
+    color: #453B3C;
+}
+
+#header-viewShop {
+    font-size: 14px;
+    padding: 16px 24px;
+    background-color: #DDD6D7;
+    height: 48px;
+    width: 120px;
+    border-radius: 4px;
+    margin-left: 60px;
+}
+
+#header-icon-conLeft {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#header-icon-conRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* footer */
+
+footer {
+    background-color: #A19596;
+    font-family: "Aleo", Arial, Helvetica, sans-serif;
+    height: 324px;
+}
+
+#logoFooter-placeholder {
+    margin-top: 48px;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+footer nav ul li:nth-child(2){
+    margin: 40px 0px;
+}
+
+#copyright, #privacyPolicy{
+    text-align: center;
+    color: #F1F1F1;
+    font-size: 11px;
+}
+
+/* Hero Section */
+
+#heroImage-placeholder {
+    display: flex;
+    background-color: #453B3C;
+    /* width: 412px; */
+    height: 360px;
+    color: #F1F1F1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* product section */
+
+
+#product-section article {
+    background-color: #DDD6D7;
+    height: 415px;
+    width: 380px;
+    margin: 48px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.descripton {
+    display: flex;
+    justify-content: center;
+}
+
+#product_1-placeholder, #product_2-placeholder {
+    background-color: #453B3C;
+    height: 240px;
+    width: 348px;
+    color:#F1F1F1;
+    margin: 29px auto 24px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#product-section article h3{
+    font-size: 18px;
+    margin: 0px auto 10px auto;
+}
+
+#product-section article p{
+    font-size: 13px;
+    font-family: "Parkinsans", "Aleo", Arial, Helvetica, sans-serif;
+}
+
+.descripton div {
+    margin: 0px 16px;
+}
+
+.prodSec-shopButton {
+    font-size: 14px;
+    padding: 24px 23px;
+    background-color: #F1F1F1;
+    border-radius: 4px;
+}
+
+/* vid section */
+
+#vid-placeholder {
+    margin: 48px auto;
+    height: 240px;
+    width: 380px;
+    background-color: #453B3C;
+    color: #F1F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+/* contact section */
+
+#contact-section h2{
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 14px;
+    /* margin: 16px auto 8px auto; */
+}
+
+#name, #email {
+    width: 380px;
+    height: 48px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+}
+
+#message {
+    width: 380px;
+    height: 120px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 8px auto 16px auto;
+    border: 1px solid #453B3C;
+    color: #A19596;
+    padding-left: 8px;
+}
+
+input[type="submit"] {
+    font-size: 14px;
+    padding: 20px 40px;
+    background-color: #453B3C;
+    color: #F1F1F1;
+    border-radius: 4px;
+    margin: 24px 0 0 53px;
 }

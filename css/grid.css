@@ -31,7 +31,7 @@
   /* ---Mini CSS reset--- */
   
   body, p, h1, h2, h3, h4, h5 {
-     margin: 0px; 
+     margin: 0px auto; 
      padding: 0px;
   }
   
@@ -53,6 +53,20 @@
       margin-top: 12px;
       margin-bottom: 12px;
   }
+
+  .full-width-grid-con {
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    margin: 0 auto;
+    justify-content: center;
+ }
+
+ header .grid-con, footer .grid-con, #heroImage-placeholder {
+    grid-column: 2/3; 
+    /* puts grid-con into the 2nd column of full-width-grid-con */
+    /* grid-row: 1/1; */
+    margin: 0px auto;
+ }
   
   .grid-con {
       display: grid;
