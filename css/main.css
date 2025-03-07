@@ -3,12 +3,17 @@
 .darkGray{color: #453B3C;}
 .lightGray{color: #DDD6D7;}
 
+
+
 body{
     font-family: "Aleo", Arial, Helvetica, sans-serif;
     color: #453B3C;
     background-color: #F1F1F1;
     margin: 0 auto;
 }
+/* Mobile Styles */
+
+/* Home Page */
 
 /* header */
 
@@ -63,6 +68,7 @@ footer {
     background-color: #A19596;
     font-family: "Aleo", Arial, Helvetica, sans-serif;
     height: 324px;
+    margin-top: 48px;
 }
 
 #logoFooter-placeholder {
@@ -108,7 +114,9 @@ footer nav ul li:nth-child(2){
 /* product section */
 
 
-#product-section article {
+
+
+#product-section article, #shop-product-section article {
     background-color: #DDD6D7;
     height: 415px;
     width: 380px;
@@ -134,12 +142,12 @@ footer nav ul li:nth-child(2){
     justify-content: center;
 }
 
-#product-section article h3{
+#product-section article h3, #shop-product-section article h3{
     font-size: 18px;
     margin: 0px auto 10px auto;
 }
 
-#product-section article p{
+#product-section article p, #shop-product-section article p{
     font-size: 13px;
     font-family: "Parkinsans", "Aleo", Arial, Helvetica, sans-serif;
 }
@@ -187,6 +195,7 @@ form {
 label {
     font-size: 14px;
     /* margin: 16px auto 8px auto; */
+    padding-left: 16px;
 }
 
 #name, #email {
@@ -218,4 +227,132 @@ input[type="submit"] {
     color: #F1F1F1;
     border-radius: 4px;
     margin: 24px 0 0 53px;
+}
+
+/* Shop Page */
+
+#product-section nav ul, #shop-product-section nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    padding: 0;
+}
+
+#product-section nav ul li a, #shop-product-section nav ul li a{
+    text-decoration: none;
+    color: #DDD6D7;
+}
+
+#product-section nav ul li:nth-child(2), #shop-product-section nav ul li:nth-child(2){
+    margin: 40px 0px;
+    border-top: 2px solid #DDD6D7;
+    border-bottom: 2px solid #DDD6D7;
+    padding: 40px 60px;
+    color: #453B3C;
+}
+
+#product-section nav ul li:nth-child(2) a, #shop-product-section nav ul li:nth-child(2) a{
+    color: #453B3C;
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width: 1200px) {
+    /* Header */
+
+    #header-icon-conRight, #logoHeader-placeholder, #header-viewShop {
+        grid-row: 1/1;
+    }
+
+    #header-icon-conRight, #logoHeader-placeholder, #header-viewShop, #header-icon-conLeft {
+        margin-top: 16px;
+    }
+
+    /* Product Section */
+
+    #product-section, #shop-product-section h2+div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #product-section article, #shop-product-section article {
+        height: 415px;
+        width: 574px;
+    }
+    
+    .descripton {
+        justify-content: space-between;
+    }
+    
+    #product_1-placeholder, #product_2-placeholder {
+        height: 240px;
+        width: 542px;
+
+    }
+    
+    #product-section article h3, #shop-product-section article h3{
+        font-size: 21px;
+        margin: 0px auto 10px auto;
+    }
+    
+    #product-section article p, #shop-product-section article p{
+        font-size: 16px;
+    }
+    
+    
+    .prodSec-shopButton {
+        font-size: 18px;
+        padding: 21px 46px;
+    }
+
+    /* Vid Section */
+
+    #vid-placeholder {
+        height: 400px;
+        width: 1168px;
+    }
+
+    /* contact section */
+
+    #contact-section h2{
+        font-size: 24px;
+    }
+
+    form {
+        width: 574px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    label {
+        font-size: 18px;
+        /* margin: 16px auto 8px auto; */
+        padding: 0;
+    }
+
+    #name, #email {
+        width: 574px;
+    }
+
+    #message {
+        width: 574px;
+    }
+
+    input[type="submit"] {
+        font-size: 18px;
+        padding: 17px 61px;
+        text-align: center;
+        margin: 0;
+        border: 0;
+        width: min-content;
+    }
+
 }

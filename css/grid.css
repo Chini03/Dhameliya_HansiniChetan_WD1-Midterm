@@ -57,7 +57,7 @@
   .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 1200px) 1fr;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     justify-content: center;
  }
 
@@ -74,8 +74,8 @@
       grid-column-gap: 20px;
       max-width: 412px;
       margin: 0 auto;
-      padding-left: 16px;
-      padding-right: 16px;
+      /* padding-left: 16px;
+      padding-right: 16px; */
   }
   
   /* 2. ---Mobile Library Grid Styles--- */
@@ -96,7 +96,7 @@
   .col-end-5	{grid-column-end: 5;}
   
   /* 3. ---Tablet Library Grid Styles--- */
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
       .grid-con {
           display: grid;
           grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -150,7 +150,7 @@
       .m-col-end-12	{grid-column-end: 12;}
       .m-col-end-13	{grid-column-end: 13;}
   
-  }
+  } */
   
   /* 4. ---Desktop Library Grid Styles--- */
   @media screen and (min-width: 1200px) {
@@ -160,8 +160,8 @@
           grid-column-gap: 30px;
           max-width: 1200px;
           margin: 0 auto;
-          padding-left: 24px;
-          padding-right: 24px;
+          /* padding-left: 24px;
+          padding-right: 24px; */
       }
   
       .l-col-span-1	{grid-column: span 1 / span 1;}
