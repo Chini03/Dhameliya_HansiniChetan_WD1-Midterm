@@ -114,6 +114,8 @@ footer nav ul li:nth-child(2){
 /* product section */
 
 
+
+
 #product-section article {
     background-color: #DDD6D7;
     height: 415px;
@@ -193,6 +195,7 @@ form {
 label {
     font-size: 14px;
     /* margin: 16px auto 8px auto; */
+    padding-left: 16px;
 }
 
 #name, #email {
@@ -263,5 +266,93 @@ input[type="submit"] {
     #header-icon-conRight, #logoHeader-placeholder, #header-viewShop {
         grid-row: 1/1;
     }
-    /* Footer */
+
+    #header-icon-conRight, #logoHeader-placeholder, #header-viewShop, #header-icon-conLeft {
+        margin-top: 16px;
+    }
+
+    /* Product Section */
+
+    #product-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #product-section article {
+        height: 415px;
+        width: 574px;
+    }
+    
+    .descripton {
+        justify-content: space-between;
+    }
+    
+    #product_1-placeholder, #product_2-placeholder {
+        height: 240px;
+        width: 542px;
+
+    }
+    
+    #product-section article h3{
+        font-size: 21px;
+        margin: 0px auto 10px auto;
+    }
+    
+    #product-section article p{
+        font-size: 16px;
+    }
+    
+    
+    .prodSec-shopButton {
+        font-size: 18px;
+        padding: 21px 46px;
+    }
+
+    /* Vid Section */
+
+    #vid-placeholder {
+        height: 400px;
+        width: 1168px;
+    }
+
+    /* contact section */
+
+    #contact-section h2{
+        font-size: 24px;
+    }
+
+    form {
+        width: 574px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    label {
+        font-size: 18px;
+        /* margin: 16px auto 8px auto; */
+        padding: 0;
+    }
+
+    #name, #email {
+        width: 574px;
+    }
+
+    #message {
+        width: 574px;
+    }
+
+    input[type="submit"] {
+        font-size: 18px;
+        padding: 17px 61px;
+        text-align: center;
+        margin: 0;
+        border: 0;
+        width: min-content;
+    }
+
 }

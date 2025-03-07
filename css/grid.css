@@ -74,8 +74,8 @@
       grid-column-gap: 20px;
       max-width: 412px;
       margin: 0 auto;
-      padding-left: 16px;
-      padding-right: 16px;
+      /* padding-left: 16px;
+      padding-right: 16px; */
   }
   
   /* 2. ---Mobile Library Grid Styles--- */
@@ -160,8 +160,8 @@
           grid-column-gap: 30px;
           max-width: 1200px;
           margin: 0 auto;
-          padding-left: 24px;
-          padding-right: 24px;
+          /* padding-left: 24px;
+          padding-right: 24px; */
       }
   
       .l-col-span-1	{grid-column: span 1 / span 1;}
