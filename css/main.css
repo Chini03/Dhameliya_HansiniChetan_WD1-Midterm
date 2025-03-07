@@ -116,7 +116,7 @@ footer nav ul li:nth-child(2){
 
 
 
-#product-section article {
+#product-section article, #shop-product-section article {
     background-color: #DDD6D7;
     height: 415px;
     width: 380px;
@@ -142,12 +142,12 @@ footer nav ul li:nth-child(2){
     justify-content: center;
 }
 
-#product-section article h3{
+#product-section article h3, #shop-product-section article h3{
     font-size: 18px;
     margin: 0px auto 10px auto;
 }
 
-#product-section article p{
+#product-section article p, #shop-product-section article p{
     font-size: 13px;
     font-family: "Parkinsans", "Aleo", Arial, Helvetica, sans-serif;
 }
@@ -231,7 +231,7 @@ input[type="submit"] {
 
 /* Shop Page */
 
-#product-section nav ul {
+#product-section nav ul, #shop-product-section nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -241,12 +241,12 @@ input[type="submit"] {
     padding: 0;
 }
 
-#product-section nav ul li a{
+#product-section nav ul li a, #shop-product-section nav ul li a{
     text-decoration: none;
     color: #DDD6D7;
 }
 
-#product-section nav ul li:nth-child(2){
+#product-section nav ul li:nth-child(2), #shop-product-section nav ul li:nth-child(2){
     margin: 40px 0px;
     border-top: 2px solid #DDD6D7;
     border-bottom: 2px solid #DDD6D7;
@@ -254,7 +254,7 @@ input[type="submit"] {
     color: #453B3C;
 }
 
-#product-section nav ul li:nth-child(2) a{
+#product-section nav ul li:nth-child(2) a, #shop-product-section nav ul li:nth-child(2) a{
     color: #453B3C;
 }
 
@@ -273,13 +273,13 @@ input[type="submit"] {
 
     /* Product Section */
 
-    #product-section {
+    #product-section, #shop-product-section h2+div{
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
-    #product-section article {
+    #product-section article, #shop-product-section article {
         height: 415px;
         width: 574px;
     }
@@ -294,12 +294,12 @@ input[type="submit"] {
 
     }
     
-    #product-section article h3{
+    #product-section article h3, #shop-product-section article h3{
         font-size: 21px;
         margin: 0px auto 10px auto;
     }
     
-    #product-section article p{
+    #product-section article p, #shop-product-section article p{
         font-size: 16px;
     }
     
